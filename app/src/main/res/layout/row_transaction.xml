@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:requiresFadingEdge="vertical"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="2dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rootLayoutTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/txt_transaction_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Transaction No:"
+
+
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_alignBottom="@+id/txt_transaction"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/txt_recipientName_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_transaction_lbl"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Recipient Name:"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignBottom="@+id/txt_recipientName" />
+
+        <TextView
+            android:id="@+id/txt_recipientAddress_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_recipientName_lbl"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Recipient address:"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/txt_recipientAddress"
+            android:layout_toStartOf="@+id/txt_recipientAddress" />
+
+        <TextView
+            android:id="@+id/txt_transactionComment_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Comment:"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_below="@+id/txt_recipientAddress"
+            android:layout_alignBottom="@+id/txt_transactionComment" />
+
+        <TextView
+            android:id="@+id/txt_timestamp_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_transactionComment_lbl" />
+
+        <TextView
+            android:id="@+id/txt_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1212o2ii23ri32 r23j r2fj shfsfjsljfklsjfjskljsdjkjsdjfsdjfkldsjfjsdljflsdjfljsdfj"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txt_recipientName_lbl"
+            android:layout_toEndOf="@+id/txt_recipientName_lbl" />
+
+        <TextView
+            android:id="@+id/txt_recipientAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1212o2ii23ri32 fsdhfsdfjkshdjhfksdhfhsdhfjkhsdkfhjksdh r2fj 2"
+            android:layout_alignBaseline="@+id/txt_recipientAddress_lbl"
+            android:layout_alignBottom="@+id/txt_recipientAddress_lbl"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/txt_recipientName_lbl"
+            android:layout_toEndOf="@+id/txt_recipientName_lbl" />
+
+        <TextView
+            android:id="@+id/txt_transactionComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1212o2ii23ri32 rdshfjksdhfjdhsfhsdhfjksdhfjhsdjfsdh23j r2fj 2"
+            android:layout_below="@+id/txt_recipientAddress"
+            android:layout_toRightOf="@+id/txt_recipientAddress_lbl"
+            android:layout_toEndOf="@+id/txt_recipientAddress_lbl" />
+
+        <TextView
+            android:id="@+id/txt_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1212o2ii23ri32"
+
+            android:layout_below="@+id/txt_transactionComment_lbl"
+            android:layout_toRightOf="@+id/txt_timestamp_lbl"
+            android:layout_toEndOf="@+id/txt_timestamp_lbl" />
+
+        <TextView
+            android:id="@+id/txt_blockNo_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block No:"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_transactionComment"
+            android:layout_toRightOf="@+id/txt_timestamp"
+            android:layout_toEndOf="@+id/txt_timestamp" />
+
+        <TextView
+            android:id="@+id/txt_blockNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:layout_below="@+id/txt_transactionComment"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/txt_blockNo_lbl"
+            android:layout_toEndOf="@+id/txt_blockNo_lbl" />
+
+        <TextView
+            android:id="@+id/txt_recipientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NA"
+            android:layout_below="@+id/txt_transaction"
+            android:layout_toRightOf="@+id/txt_recipientAddress_lbl"
+            android:layout_toEndOf="@+id/txt_recipientAddress_lbl" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

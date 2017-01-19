@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mphasis.pfizerappDoctor.activity.DashBoardActivity">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btn_userProfile"
+        android:background="@drawable/user"
+
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_username"
+        android:text="Welcome User "
+        android:gravity="bottom|right"
+        android:textSize="20sp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignBottom="@+id/btn_userProfile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btn_userProfile"
+        android:layout_toStartOf="@+id/btn_userProfile"
+        android:layout_alignParentTop="true" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:background="@color/cardview_dark_background"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/card_transaction"
+        android:layout_below="@+id/card_medicalRecord"
+        android:layout_alignLeft="@+id/card_medicalRecord"
+        android:layout_alignStart="@+id/card_medicalRecord"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/root_Lin_transaction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/transaction" />
+
+            <ImageView
+                android:layout_width="134dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_transaction"
+
+                android:layout_weight="0.47" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:background="@color/cardview_dark_background"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/card_medicalRecord"
+        android:layout_below="@+id/txt_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:text="@string/medical_records" />
+
+            <ImageView
+                android:layout_width="203dp"
+                android:layout_height="78dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_records"
+
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

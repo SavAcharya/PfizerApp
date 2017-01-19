@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Patient</string>
+    <string name="title_activity_transaction_list">TransactionListActivity</string>
+    <string name="transaction">Transaction</string>
+    <string name="medical_records">Medical records</string>
+</resources>
